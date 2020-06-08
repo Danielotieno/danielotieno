@@ -259,11 +259,13 @@ Navbar
   }
   .nav-links a {
     text-transform: capitalize;
-    color: var(--clr-grey-1);
+    color: #000;
     font-weight: bold;
+    font-size: 18px;
     letter-spacing: var(--spacing);
     transition: var(--transition);
     padding: 0.5rem 0;
+    opacity: 0.8;
   }
   .nav-links a:hover {
     color: var(--clr-primary-5);
