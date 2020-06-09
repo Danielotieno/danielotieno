@@ -170,13 +170,22 @@ p {
   }
 }
 /* added during recording */
-.underline {
-  width: 5rem;
-  height: 0.25rem;
+
+.span-heading {
   margin-bottom: 1.25rem;
+}
+
+.hero-info span {
   background: var(--clr-primary-5);
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0px;
 }
 .section-title {
   margin-bottom: 4rem;
@@ -410,9 +419,8 @@ Hero
 /* underline added to globals */
 .hero {
   margin-top: -5rem;
-  padding-top: 5rem;
   height: 100vh;
-  background: var(--clr-primary-10);
+  background: #ecefa9;
   position: relative;
 }
 
@@ -427,14 +435,17 @@ Hero
   margin-left: 0;
 }
 .hero-info {
-  background: var(--clr-primary-10);
+  background: #ecefa9;
 }
 .hero-img {
   display: none;
+  height: 400px;
+  width: 400px;
+  border: 20px solid rgba(0, 0, 0, 0.07);
+  margin: 0 auto;
+  border-radius: 50%;
 }
-.hero-info h4 {
-  color: var(--clr-grey-5);
-}
+
 .hero-icons {
   justify-items: flex-start;
 }
