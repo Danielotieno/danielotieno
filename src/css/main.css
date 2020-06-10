@@ -19,6 +19,7 @@ Variables
   --clr-primary-3: hsl(185, 81%, 29%);
   --clr-primary-4: hsl(184, 77%, 34%);
   --clr-primary-5: #2caeba;
+  --clr-primary-11: #ecefa9;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
@@ -170,6 +171,14 @@ p {
   }
 }
 /* added during recording */
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .span-heading {
   margin-bottom: 1.25rem;
@@ -420,7 +429,7 @@ Hero
 .hero {
   margin-top: -5rem;
   height: 100vh;
-  background: #ecefa9;
+  background: var(--clr-primary-11);
   position: relative;
 }
 
@@ -435,7 +444,7 @@ Hero
   margin-left: 0;
 }
 .hero-info {
-  background: #ecefa9;
+  background: var(--clr-primary-11);
 }
 .hero-img {
   display: none;
@@ -523,14 +532,14 @@ Services
   transition: var(--transition);
 }
 .service:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  background: var(--clr-primary-11);
+  color: #000000;
 }
 .service:hover p {
-  color: var(--clr-primary-9);
+  color: #000000;
 }
 .service:hover .underline {
-  background: var(--clr-primary-9);
+  background: #000000;
 }
 @media screen and (min-width: 676px) {
   .services-center {
