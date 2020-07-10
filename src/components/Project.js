@@ -1,11 +1,32 @@
-import React from "react"
-import PropTypes from "prop-types"
-import Image from "gatsby-image"
-import { FaGithubSquare, FaShareSquare } from "react-icons/fa"
-const Project = () => {
-  return <h2>project copmonent</h2>
-}
+import React from 'react';
+import PropTypes from 'prop-types';
+import Image from 'gatsby-image';
+import { FaGithubSquare, FaShareSquare } from 'react-icons/fa';
+const Project = ({ description, github, live, image, stack, title }) => {
+  return (
+    <article className='project'>
+      <Image fluid={image.childImageSharp.fluid} className='project-img' />
+      <div className='project-info'>
+        <h3>{title}</h3>
+        <p className='project-desc'>{description}</p>
+        <div className='project-stack'>
+          {stack.map((item) => {
+            return <span key={item.id}>{item.name}</span>;
+          })}
+        </div>
+        <div className='project-links'>
+          <a href={github}>
+            <FaGithubSquare className='project-icon' />
+          </a>
+          <a href={live}>
+            <FaShareSquare className='project-icon' />
+          </a>
+        </div>
+      </div>
+    </article>
+  );
+};
 
-Project.propTypes = {}
+Project.propTypes = {};
 
-export default Project
+export default Project;
