@@ -806,6 +806,10 @@ Blog
   color: var(--clr-grey-1);
 }
 
+.daniel {
+  color: white;
+  text-transform: uppercase;
+}
 .blog-footer {
   display: flex;
   justify-content: space-between;
