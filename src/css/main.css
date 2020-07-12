@@ -144,6 +144,11 @@ p {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
 }
+.cv .btn {
+  margin-top: 1.5rem;
+  background-color: #0bceaf;
+  color: #fff;
+}
 .btn:hover {
   color: #000000;
   background: var(--clr-primary-11);
@@ -920,7 +925,9 @@ About Page
 }
 .about-img {
   margin-bottom: 2rem;
-  height: 25rem;
+  height: 30rem;
+  border: 20px solid rgba(0, 0, 0, 0.07);
+  border-radius: 5%;
 }
 .about-text .section-title {
   margin-bottom: 2rem;
