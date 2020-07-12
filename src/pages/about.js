@@ -28,7 +28,7 @@ const About = ({
               })}
             </div>
             <div className='cv'>
-              <a href={Cv} className='btn'>
+              <a href={Cv} className='btn' download>
                 Download CV{' '}
                 <span>
                   <FaCloudDownloadAlt />
