@@ -6,12 +6,11 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Daniel Otieno Portfolio',
-    description: 'This is Daniel Otieno Portfolio Site',
-    author: '@danielotieno',
+    title: 'Daniel Otieno',
+    description: 'Welcome || This is Daniel Otieno website portfolio',
     twitterUsername: '@danielotienoke',
     image: '/twitter-img.png',
-    siteUrl: 'https://testing-strapi-gatsby-build.netlify.app',
+    siteUrl: 'https://danielotieno.netlify.app',
   },
   plugins: [
     `gatsby-transformer-sharp`,

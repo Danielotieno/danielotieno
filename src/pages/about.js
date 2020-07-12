@@ -5,6 +5,7 @@ import Title from '../components/Title';
 import Image from 'gatsby-image';
 import Cv from '../assets/daniel_cv.pdf';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
+import SEO from '../components/SEO';
 
 const About = ({
   data: {
@@ -14,6 +15,7 @@ const About = ({
   const { title, info, stack, image } = nodes[0];
   return (
     <Layout>
+      <SEO title='About' description='This is about me page' />
       <section className='about-page'>
         <div className='section-center about-center'>
           <Image fluid={image.childImageSharp.fluid} className='about-img' />
