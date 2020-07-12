@@ -1,8 +1,43 @@
-import React from "react"
-import Layout from "../components/Layout"
+import React from 'react';
+import Layout from '../components/Layout';
 
 const contact = () => {
-  return <h2>contact page</h2>
-}
+  return (
+    <Layout>
+      <section className='contact-page'>
+        <article className='contact-form'>
+          <h3>Contact Me</h3>
+          <form action='https://formspree.io/xvowvoen' method='POST'>
+            <div className='form-group'>
+              <input
+                type='text'
+                name='Full Name'
+                className='form-control'
+                placeholder='Full Name'
+                required
+              />
+              <input
+                type='email'
+                name='email'
+                className='form-control'
+                placeholder='Email'
+                required
+              />
+              <textarea
+                name='Message'
+                rows='6'
+                className='form-control'
+                placeholder='Message'
+                required></textarea>
+            </div>
+            <button type='submit' className='submit-btn btn'>
+              Send Message
+            </button>
+          </form>
+        </article>
+      </section>
+    </Layout>
+  );
+};
 
-export default contact
+export default contact;
