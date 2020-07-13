@@ -131,7 +131,7 @@ p {
 .btn {
   text-transform: uppercase;
   background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  color: #ffffff;
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -146,7 +146,6 @@ p {
 }
 .cv .btn {
   margin-top: 1.5rem;
-  background-color: #0bceaf;
   color: #fff;
 }
 .btn:hover {

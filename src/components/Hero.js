@@ -33,7 +33,7 @@ const Hero = () => {
             <h1>Daniel Otieno</h1>
             <h4>🔥 Software Developer</h4>
             <Link to='/contact' className='btn'>
-              Cantact Me
+              Contact Me
             </Link>
             <SocialLinks />
           </div>
