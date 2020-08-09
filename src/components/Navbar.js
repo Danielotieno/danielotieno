@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { FaAlignRight } from 'react-icons/fa';
 import PageLinks from '../constants/links';
 const Navbar = ({ toggleSidebar }) => {

@@ -62,6 +62,7 @@ Global Styles
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--ff-secondary);
   background: var(--clr-white);
@@ -70,6 +71,7 @@ body {
   font-size: 0.875rem;
   margin-top: 5rem;
 }
+
 ul {
   list-style-type: none;
 }
@@ -454,7 +456,7 @@ Hero
   display: none;
   height: 400px;
   width: 400px;
-  border: 20px solid rgba(0, 0, 0, 0.07);
+  border: 15px solid rgb(76, 76, 76);
   margin: 0 auto;
   border-radius: 50%;
 }
@@ -858,7 +860,7 @@ Footer
 */
 .footer {
   height: 9rem;
-  background: #222;
+  background: #4c4c4c;
   text-align: center;
   display: grid;
   place-items: center;
@@ -879,7 +881,7 @@ Footer
   color: var(--clr-white);
 }
 .footer .social-link:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-primary-11);
 }
 /*
 ===============
