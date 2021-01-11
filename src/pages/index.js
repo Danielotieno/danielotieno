@@ -13,7 +13,7 @@ export default ({ data }) => {
   } = data;
   return (
     <Layout>
-      <SEO title='Home' />
+      <SEO title='Welcome' />
       <Hero />
       <Services />
       <Jobs />
