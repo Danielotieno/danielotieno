@@ -2,23 +2,23 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 import Title from '../components/Title';
-import Image from 'gatsby-image';
 import Cv from '../assets/daniel_cv.pdf';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 import SEO from '../components/SEO';
+import AbtImg from '../assets/danny-img.jpeg';
 
 const About = ({
   data: {
     allStrapiAbout: { nodes },
   },
 }) => {
-  const { abt, info, stack, pp } = nodes[0];
+  const { abt, info, stack } = nodes[0];
   return (
     <Layout>
       <SEO title='About' description='This is about me page' />
       <section className='about-page'>
         <div className='section-center about-center'>
-          <Image fluid={pp.childImageSharp.fluid} className='about-img' />
+          <img src={AbtImg} className='about-img' alt='About Daniel' />
           <article className='about-text'>
             <Title title={abt} />
             <p>{info}</p>
@@ -52,13 +52,6 @@ export const query = graphql`
         }
         abt
         info
-        pp {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }

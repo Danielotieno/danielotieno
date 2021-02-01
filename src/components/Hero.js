@@ -31,14 +31,16 @@ const Hero = () => {
           </div>
           <div>
             <h1>Daniel Otieno</h1>
-            <h4>🔥 Software Developer</h4>
+            <h4>
+              <span>🔥</span> Software Developer
+            </h4>
             <Link to='/contact' className='btn'>
               Contact Me
             </Link>
             <SocialLinks />
           </div>
         </article>
-        <Image fluid={fluid} className='hero-img' />
+        <Image fluid={fluid} className='hero-img' alt='Hero Daniel' />
       </div>
     </header>
   );
