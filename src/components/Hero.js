@@ -40,7 +40,7 @@ const Hero = () => {
                   1000,
                   'Open Sourcer ✔️',
                   1000,
-                  'Volunteer 🌱',
+                  'Community Volunteer 🌱',
                   1000,
                   'Tech Evangelist 💻',
                   1000,
